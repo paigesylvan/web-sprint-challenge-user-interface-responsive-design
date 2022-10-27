@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -65,32 +66,50 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 3.5rem;
+    color: white;
+    padding: 15px;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    color: white;
 }
 
 /* header section */
 header {
     width: 100%;
-    height: 100vh;
+    height: 78vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
+    height: 95px;
 }
 
 /* spacers */
@@ -108,15 +127,26 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: max-content;
     text-align: center;
     background-color: rgb(0, 4, 17);
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    padding: 13px;
+}
+.row1 .row2 .row3 {
+
+    display: flex;
+    justify-content: space-around;
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -139,6 +169,7 @@ header {
 
 .about-container .text {
     width: 50%;
+    padding: 10px;
 }
 
 /* contact us section */
@@ -186,24 +217,75 @@ header {
 
 .contacts {
     width: 25%;
+    font-size: 4rem;
 }
+
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    background-color: rgb(0, 4, 17);
+    border-top: 2px solid grey;
+    padding: 20px 20px 10px 20px;
+    justify-content: space-between;
 }
+
+.contact-us {
+    width: 25%;
+}
+
+.contact-us h3 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.input input {
+    width: 70%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright  {
+    display:flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+
+.right-side{
+    width: 60%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    header {
+        
+      
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
+        display: flex;
     }
     
     /* about us section */
@@ -248,6 +330,7 @@ footer {
     footer {
         height: auto;
         padding-top: 2.5vh;
-        font-size: 2rem;
+        font-size: 1rem;
+       
     }
 }

@@ -54,6 +54,7 @@ table {
 html {
     max-width: 1920px;
     min-width: 428px;
+    width: 100%;
     font-size: 62.5%;
 }
 
@@ -64,42 +65,71 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
 }
 
+
 h2 {
-    font-size: 6rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    padding: 15px;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 4rem;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 1.3rem;
+    color: white;
 }
 
 /* header section */
 header {
     width: 100%;
-    height: 100vh;
+    height: 45rem;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
+    height: 95px;
+}
+
+a {
+    font-size: 1.7rem;
+}
+
 
 /* spacer */
 .spacer {
     width: 100%;
-    height: 20vh;
+    height: 12vh;
     background-color: rgb(0, 4, 17);
 }
 .spacer-sm {
@@ -112,35 +142,104 @@ header {
 
 .menu {
     width: 100%;
-    height: auto;
-    background-image: url('../img/staff-bartender.jpg');
+    background-image: url('../img/staff-bartender.jpg'); 
     background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+.menu-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-categories {
+    width: 40%;
+    margin-top: 20px;
 }
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
+    
     font-size: 3rem;
+    display: flex;
+    background-color: rgb(0, 4, 17);
+    border-top: 2px solid grey;
+    padding: 20px 20px 10px 20px;
+    justify-content: space-between;
+}
+
+.contact-us {
+    width: 25%;
+}
+
+.contact-us h3 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.input input {
+    width: 70%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright  {
+    display:flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+
+.right-side{
+    width: 60%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* mobile media query */
-@media (max-width: 428px) {
+@media only screen and (max-width: 500px) {
     /* header section */
-    .header-title {
+
+    header {
         width: 75%;
         margin: 0 auto;
         text-align: center;
         font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* menu */
     .menu {
+        height: auto;
+        display: flex;
         background-image: none;
+        background-color: white;
     }
 
     /* footer section */
@@ -148,5 +247,9 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+
+    .right-side {
+        font-size: 15px;
     }
 }
