@@ -70,12 +70,11 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     color: white;
     text-align: center;
-    padding: 10px;
-    background-color: black;
-    opacity: 0.8;
+    padding: 19px;
+    background-color: black; 
 }
 
 h2 {
@@ -94,6 +93,21 @@ p, a {
 }
 
 /* header section */
+
+.bloomHeader{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 header {
     width: 100%;
     height: 78vh;
@@ -101,6 +115,14 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    font-size: 2rem;
 }
 
 nav {
@@ -111,6 +133,10 @@ nav {
     opacity: 0.8;
     height: 95px;
 }
+.icons {
+    font-size: 32px;
+}
+
 
 /* spacers */
 .spacer {
@@ -126,6 +152,7 @@ nav {
 
 /* gallery section */
 .gallery {
+    padding-top: 80px;
     width: 100%;
     height: max-content;
     text-align: center;
@@ -165,11 +192,23 @@ img {
 
 .about h2 {
     width: 100%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.about h3 {
+    padding-bottom: 30px;
 }
 
 .about-container .text {
     width: 50%;
-    padding: 10px;
+    padding-bottom: 1000px;
+
+}
+
+.text {
+    text-align: center;
+    line-height: 35px;
 }
 
 /* contact us section */
@@ -218,9 +257,14 @@ img {
 .contacts {
     width: 25%;
     font-size: 4rem;
+    
 }
 
-
+.contacts a {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+}
 /* footer section */
 footer {
     width: 100%;
@@ -252,6 +296,7 @@ footer {
 
 .footer-nav {
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
